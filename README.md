@@ -25,7 +25,7 @@ All code below are for a terminal.
 
 1. Clone repository: 
 ```sh
-  $ git clone https://github.com/tanzila-abedin/capstone-movie-mania.git
+  $ git clone https://github.com/tanzila-abedin/tee-store.git
 ```
 2. Change directory inside project
 ```sh
