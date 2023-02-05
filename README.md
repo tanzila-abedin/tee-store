@@ -29,15 +29,15 @@ All code below are for a terminal.
 ```
 2. Change directory inside project
 ```sh
-cd tee-store
+  $ cd tee-store
 ```
 3. In your terminal, run 
 ```sh
-npm install
+  $ npm install
 ```
 4. Next, run the following to access the website on `http://localhost:5173` in your local computer.
 ```sh
-npm run dev
+  $ npm run dev
 ```
 
 *Press `Ctrl + c` to exit the `npm run dev` session in your terminal.
