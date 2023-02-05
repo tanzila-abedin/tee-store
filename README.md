@@ -29,7 +29,7 @@ All code below are for a terminal.
 ```
 2. Change directory inside project
 ```sh
-cd capstone-movie-mania
+cd tee-store
 ```
 3. In your terminal, run 
 ```sh
