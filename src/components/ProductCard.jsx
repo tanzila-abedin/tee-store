@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
           <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full m- overflow-hidden bg-fixed opacity-0 hover:opacity-50 transition duration-300 ease-in-out bg-teal-100">
             <FaShoppingCart
               color="teal"
-              className="h-16 w-16 mx-64 my-44 opacity-100"
+              className="h-16 w-16 mx-60 my-44 opacity-100"
             />
           </div>
         </a>
