@@ -19,7 +19,7 @@ const Navigate = () => {
         <p className="text-white italic font-medium text-3xl"> Tee-Store</p>
       </div>
       <div className="flex justify-between">
-        <a href="#" className="mx-6">
+        <a href="/cart" className="mx-6">
           <FaShoppingCart color="white" className="h-10 w-10" />
           <span>{getTotalItems() || 0}</span>
         </a>
