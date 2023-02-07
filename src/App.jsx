@@ -1,18 +1,21 @@
 import Routes from "./routes";
 import QueryProvider from "./util/QueryProvider";
 import Layout from "./components/Layout";
-
-import { store } from "./store/index";
 import { Provider } from "react-redux";
+
+import { persistor, store } from "./store/index";
+import { PersistGate } from "redux-persist/integration/react";
 
 function App() {
   return (
     <Provider store={store}>
-      <QueryProvider>
-        <Layout>
-          <Routes />
-        </Layout>
-      </QueryProvider>
+      <PersistGate persistor={persistor}>
+        <QueryProvider>
+          <Layout>
+            <Routes />
+          </Layout>
+        </QueryProvider>
+      </PersistGate>
     </Provider>
   );
 }

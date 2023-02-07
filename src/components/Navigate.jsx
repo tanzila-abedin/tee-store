@@ -2,7 +2,7 @@ import { FaHome, FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
 const Navigate = () => {
-  const cart = useSelector((state) => state.cart.items);
+  const cart = useSelector((state) => state.items);
   console.log(cart);
 
   const getTotalItems = () => {
