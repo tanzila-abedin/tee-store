@@ -9,7 +9,6 @@ const DetailCard = ({ details }) => {
     dispatch(
       cartActions.addProduct({
         product: details,
-        quantity: 1,
       })
     );
   };
