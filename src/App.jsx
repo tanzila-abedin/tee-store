@@ -1,15 +1,19 @@
 import Routes from "./routes";
 import QueryProvider from "./util/QueryProvider";
-import Navigate from "./components/Navigate";
 import Layout from "./components/Layout";
+
+import { store } from "./store/index";
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <Layout>
+    <Provider store={store}>
       <QueryProvider>
-        <Routes />
+        <Layout>
+          <Routes />
+        </Layout>
       </QueryProvider>
-    </Layout>
+    </Provider>
   );
 }
 
