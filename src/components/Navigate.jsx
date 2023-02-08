@@ -21,7 +21,9 @@ const Navigate = () => {
       <div className="flex justify-between">
         <a href="/cart" className="mx-6">
           <FaShoppingCart color="white" className="h-10 w-10" />
-          <span>{getTotalItems() || 0}</span>
+          <span className="absolute font-extrabold bg-amber-600">
+            {getTotalItems() || 0}
+          </span>
         </a>
         <a href="/">
           <FaHome color="white" className="h-10 w-10" />
