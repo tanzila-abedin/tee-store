@@ -1,7 +1,6 @@
 import { FaShoppingCart } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
-  console.log(product);
   return (
     <a>
       <div className="relative overflow-hidden  bg-no-repeat bg-cover w-full rounded-xl flex justify-center items-center p-4 px-8 bg-white">
