@@ -18,10 +18,10 @@ const Navigate = () => {
         <p className="text-white italic font-medium text-3xl"> Tee-Store</p>
       </div>
       <div className="flex justify-between">
-        <a href="/cart" className="mx-6">
+        <a href="/cart" className="mx-6 relative">
           <FaShoppingCart color="white" className="h-10 w-10" />
-          <span className="absolute font-extrabold bg-amber-600">
-            {getTotalItems() || 0}
+          <span className="absolute font-extrabold text-2xl -top-3 -left-8 w-full rounded-full flex justify-center items-center bg-black bg-opacity-75 text-white">
+            {getTotalItems() || ""}
           </span>
         </a>
         <a href="/">
