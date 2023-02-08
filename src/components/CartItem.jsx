@@ -21,7 +21,8 @@ const CartItem = ({ details }) => {
   console.log(product);
   return (
     <>
-      <div className="grid grid-cols-4 text-center py-10">
+      <div className="grid grid-cols-5 text-center py-10">
+        <img src={product.image} className="h-12 w-12 items-center" />
         <p className=" text-teal-400 font-medium text-lg">{product.title}</p>
         <p className="text-lg">R {product.price}</p>
         <div className="grid grid-cols-3 gap-0 m-0">
