@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const Navigate = () => {
   const cart = useSelector((state) => state.items);
-  console.log(cart);
 
   const getTotalItems = () => {
     let total = 0;
