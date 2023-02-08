@@ -20,11 +20,15 @@ export const cartSlice = createSlice({
       }
     },
     increment: (state, action) => {
-      const item = state.items.find((item) => item.id === action.payload);
+      const item = state.items.find(
+        (item) => item.product.id === action.payload
+      );
       item.quantity++;
     },
     decrement: (state, action) => {
-      const item = state.items.find((item) => item.id === action.payload);
+      const item = state.items.find(
+        (item) => item.product.id === action.payload
+      );
       if (item.quantity === 1) {
         item.quantity = 1;
       } else {
