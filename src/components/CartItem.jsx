@@ -26,7 +26,9 @@ const CartItem = ({ details }) => {
           src={product.image}
           className="h-12 w-12 items-center sm:items-center"
         />
-        <p className=" text-teal-400 font-medium text-lg">{product.title}</p>
+        <p className=" text-teal-400 font-medium text-lg sm:text-sm sm:font-normal">
+          {product.title}
+        </p>
         <p className="text-lg">R {product.price}</p>
         <div className="grid grid-cols-3 gap-0 m-0 sm:grid-cols-1">
           <button
@@ -35,7 +37,7 @@ const CartItem = ({ details }) => {
           >
             -
           </button>
-          <p className="text-lg">{quantity}</p>
+          <p className="text-lg sm:m-4">{quantity}</p>
           <button
             onClick={onIncrementQuantity}
             className=" bg-teal-400  rounded-xl text-4xl text-white"
